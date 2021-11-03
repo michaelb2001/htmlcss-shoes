@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-snap-type:mandatory ;
+}
+nav{
+    position:relative;
+}
+
+ul{
+    position:absolute;
+    top:20px;
+    right:40px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin:25px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 50%;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    z-index:2;
+    position:fixed;
+}
+
+a:hover{
+    box-shadow: 0px 4px 10px black;
+}
+
+/*sezioni del main*/
+
+#pas,#sas,#tas{
+    width: 100vw;
+    height: 100vh;
+    position:relative;
+}
+
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+h2{
+    font-size: 38px;
+}
+main h2{
+   text-transform: uppercase;
+   color: yellow;
+}
+
+#tas h2{
+    color: green;
+}
+#pas{
+    background-color: brown;
+}
+
+#sas{
+    background-color: green;
+}
+
+#tas{
+    background-color: yellow;
+}
+
+
+
+
